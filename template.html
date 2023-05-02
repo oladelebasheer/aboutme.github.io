@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oladele Basheer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Begin of header section -->
+    <header class="section has-background-link py-4 has-text-white">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <span class="icon">
+              <i class="far fa-envelope"></i>
+            </span>
+            ajaoooladele@gmail.com
+          </div>
+
+          <div class="column">
+            <span class="icon">
+              <i class="fas fa-phone-volume"></i>
+            </span>
+            +2348163312172
+          </div>
+
+          <div class="column has-text-right-tablet">
+            <span class="icon">
+              <i class="fas fa-headphones-alt"></i>
+            </span>
+            Support
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End of header section -->
+
+    <!-- Begin of nav section -->
+    <section class="section" id="hero">
+      <div class="container">
+        <nav
+          class="navbar is-transparent"
+          role="navigation"
+          aria-label="main navigation"
+        >
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="./images/img.jpg" width="28" height="28" />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item has-text-white">Home</a>
+              <a class="navbar-item has-text-white">About Me</a>
+              <a class="navbar-item has-text-white">Portfolio</a>
+              <a  class="navbar-item has-text-white" href="resume.html"> Resume </a>
+              <a  class="navbar-item has-text-white">Blog</a>
+              <a  class="navbar-item has-text-white">Contact</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="columns pt-6">
+          <div class="column mt-6">
+            <span class="icon has-text-warning">
+              <i class="far fa-chart-bar fa-lg"></i>
+            </span>
+            <h1 class="is-size-1 ha-text-white">
+              Web Developer <br />
+              & App Development
+            </h1>
+            <p class="has-text-white">
+              I am a full stack engineer born and raised in Nigeria. I Study in
+              Information Technology, I grew to appreciate and enjoy
+              programming. I owe a lot of my development to being a tutor. It
+              made me proud to see the positive change I could make on someone
+              by just magnifying the ability they already had while also growing
+              myself.
+            </p>
+            <button class="button is-warning mt-4">About Me</button>
+          </div>
+
+          <div class="column mt-6">
+            <img src="./images/Programming.png" alt="hero images" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of hero section -->
+
+    <!-- Begin of footer section -->
+    <footer class="section">
+        footer here
+    </footer>
+    <!-- End of any other section -->
+
+    <!-- Begin of Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll('.navbar-burger'),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      });
+    </script>
+    <!-- End of Script -->
+
+  </body>
+</html>
