@@ -1,84 +1,137 @@
 @import url('https://fonts.googleapis.com/css?family=popins:200,300,400,500,600,700,800,900&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 /* header */
-.header{
-width: 100%;
-height: 100vh;
-padding:0;
-background-color: #ECF0F1;
+.header {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
 }
 
+nav {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 0;
+  background-color: blue;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 30px;
+}
+nav ul li a{
+text-decoration: none;
+color:#3f71b4
+}
+/* Hero */
+#hero{
+    background: url('/images/Solution_mindset.png');
+    height: 1079px;
+    background-position-x:center;
+    background-size: cover;
+}
+.text-box{
+    margin-top: 10px;
+    max-width: 500px;
+}
+.text-box h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #3f51b5
+}
+.text-box a{
+     display:inline-block;
+     text-decoration: none;
+     color: #fff;
+     background-color: #3f51b5;
+     padding: 10px 30px;
+     font-size: 18px;
+     margin-top: 50px;
+     border-radius: 6px;
+}
+.user-box{
+    border-color:#ecf0f1;
+    position: absolute;
+    top: 0;
+    right: 12;
+}
+.user-box img{
+    display: block;
+    
+    width:600px;
+}
 /* Footer*/
-footer{
-    position:absolute;
-    bottom:0;
-    left:0;
-    right: 0;
-    background-color: #111;
-    height: auto;
-    width: 100vw;
-    font-family: "Open sans";
-padding-top: 40px;
-color:white
+footer {
+  position: absolute;
+  /* bottom: 0;
+  left: 0;
+  right: 0; */
+  background-color: #111;
+  height: auto;
+  width: 100vw;
+  font-family: 'Open sans';
+  padding-top: 40px;
+  color: white;
 }
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
-.footer-content p{
-    max-width: 600px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 18px;
+.footer-content p {
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 18px;
 }
-.socials{
-    list-style:none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
 }
-.socials li{
-    margin: 0 10px;
+.socials li {
+  margin: 0 10px;
 }
-.socials a{
-    text-decoration: none;
-    color: #fff;
+.socials a {
+  text-decoration: none;
+  color: #fff;
 }
-.socials a i{
-    font-size:1.1rem;
-    transition: color .4s ease;
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
 }
-.socials a:hover i{
-    color: aqua;
+.socials a:hover i {
+  color: aqua;
 }
-.footer-bottom{
-    background-color: #000;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
+.footer-bottom {
+  background-color: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
 }
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: uppercase;
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: uppercase;
 }
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
 }
