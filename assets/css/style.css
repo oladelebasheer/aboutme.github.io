@@ -1,5 +1,5 @@
 #hero{
-    background-image: url('/img/hero-banner.svg');
+    background: url('/img/hero-banner.svg');
     background-position: center;
     background-size:cover;
 }
